@@ -17,15 +17,14 @@ print(stripname.strip('$')) # the print with removing $
 def namestrip():
    stripwhitespace = name.strip().strip('$')
    print(stripwhitespace)
-
 print ('With function')
 namestrip()
 
 
 print ('variable pass With function')
-name = '  $$variable$$ '
+name = '  $$$vari#able## '
 def varnamestrip(name):
-   stripwhitespace = name.strip().strip('$')
+   stripwhitespace = name.strip().strip('#' or '$')
    return stripwhitespace
 print(varnamestrip(name))
 
